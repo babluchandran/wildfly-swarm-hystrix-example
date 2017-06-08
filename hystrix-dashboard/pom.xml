@@ -63,8 +63,16 @@
 			<type>war</type>
 		</dependency>
 	</dependencies>
+	   <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
-	<build>
+	<!--<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -109,6 +117,7 @@
 									<runCmd>cd /usr/local/tomcat/webapps &amp;&amp; rm -rf ROOT &amp;&amp; mv hystrix-dashboard.war ROOT.war</runCmd>
 								</runCmds>
 							</build>
+
 							<run>
 								<ports>
 									<port>http.port:8080</port>
@@ -119,5 +128,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 </project>
